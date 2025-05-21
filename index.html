@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>R&R MAG GLOBAL</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/svg" href="../assets/images/Logo.svg" />
+
+  <!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Google Fonts: Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- Configurar Tailwind para usar Poppins -->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Poppins', 'sans-serif'],
+        },
+        colors: {
+          primary: '#7469B6',
+          secondary: '#FFE569',
+        }
+      }
+    }
+  }
+</script>
+
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+<!-- ------------------------- NAVBAR ESTILO SCHOLAR CON STICKY ------------- -->
+<nav class="bg-[#7E74F1] text-white font-sans fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        
+        <!-- LOGO -->
+      <div class="flex items-center space-x-3">
+        <img src="../assets/images/Logo.svg" alt="Logo" class="h-8 w-auto">
+        <span class="text-white font-extrabold text-xl whitespace-nowrap">R&R MAG GLOBAL</span>
+      </div>
+
+  
+        <!-- MENÚ -->
+        <div class="hidden md:flex space-x-6 items-center">
+          <a href="#home" class="hover:bg-white hover:text-[#7E74F1] px-4 py-2 rounded-full transition font-medium">Home</a>
+          <a href="#about" class="hover:bg-white hover:text-[#7E74F1] px-4 py-2 rounded-full transition font-medium">About Us</a>
+          <a href="#articulos" class="hover:bg-white hover:text-[#7E74F1] px-4 py-2 rounded-full transition font-medium">Articles</a>
+          <a href="#quiz" class="hover:bg-white hover:text-[#7E74F1] px-4 py-2 rounded-full transition font-medium">Quiz</a>
+          <a href="#contacto" class="hover:bg-white hover:text-[#7E74F1] px-4 py-2 rounded-full transition font-medium">contact us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Espaciado para que el contenido no quede oculto debajo del navbar -->
+  <div class="h-16"></div>
+  
+
+<!--              -------------------------     Home seccion       --------------  -->
+<section  id="home" class="bg-gradient-to-b from-[#2c2d45] to-[#1c1c2e] text-white font-sans relative overflow-hidden">
+    <div class="relative z-20 max-w-7xl mx-auto px-6 py-24 flex flex-col-reverse md:flex-row items-center justify-between gap-8">
+      <!-- Texto -->
+      <div class="md:w-1/2">
+        <h1 class="text-4xl md:text-5xl font-bold leading-snug">
+          Welcome to<br>
+          R&R MAG is 
+          <span id="animated-word" class="text-yellow-400 transition-all duration-500">Innovative</span>
+        </h1>
+        <a href="#about" class="mt-6 inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full shadow hover:bg-yellow-300 transition-all">Our Story</a>
+      </div>
+  
+      <!-- Video -->
+      <div class="md:w-1/2">
+        <div class="w-full">
+          <iframe class="rounded-lg shadow-lg w-full h-64 md:h-80" src="https://www.youtube.com/embed/sO86KP_XxEI" title="Sample Video" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Curva inferior incluida DENTRO de la sección -->
+    <svg viewBox="0 0 1440 320" class="w-full h-auto block absolute bottom-0 left-0 z-10">
+      <path fill="#fff" d="M0,224L60,218.7C120,213,240,203,360,213.3C480,224,600,256,720,256C840,256,960,224,1080,213.3C1200,203,1320,213,1380,218.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+    </svg>
+  </section>
+  
+  <!--              -------------------------     About Us       --------------  -->
+  <section id="about" class="pt-10 pb-24 bg-white text-gray-800 -mt-[1px] relative z-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+      <!-- Título principal -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-12 text-[#1e1e4b] drop-shadow-lg">
+        About R&R MAG
+      </h2>
+  
+      <!-- Contenido principal -->
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-12">
+        <!-- Texto -->
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-semibold mb-4 text-[#1e1e4b]">How R&R MAG Started</h3>
+          <p class="text-gray-700 mb-4">
+            <strong>Founded in 2025</strong>,R&R MAG Global is a fresh and innovative digital magazine designed for young future explorers. Our magazine wants to share ideas, give information, and inspire people with articles, interviews, fun activities, and special stories.
+          </p>
+          <p class="text-gray-700">
+            R&R MAG Global was created by students with big dreams. We talk about important topics like technology, the environment, health, school, and lifestyle. We love to create and share with the world.
+            We believe in young people and their ideas.
+            Thank you for being part of our growing community!
+          </p>
+        </div>
+  
+        <!-- Imágenes de los fundadores -->
+        <div class="md:w-1/2 flex flex-col sm:flex-row justify-center items-center gap-8">
+          <!-- Raul -->
+          <div class="text-center bg-white rounded-xl shadow-lg p-4">
+            <img src="../assets/images/Raul.jpeg" alt="Raul" class="w-40 h-40 object-cover rounded-xl mb-3" />
+            <p class="font-semibold text-lg text-[#1e1e4b]">Raul</p>
+            <p class="text-sm text-gray-500">Founder</p>
+          </div>
+          <!-- Ricardo -->
+          <div class="text-center bg-white rounded-xl shadow-lg p-4">
+            <img src="../assets/images/Ricardo.jpeg" alt="Ricardo" class="w-40 h-40 object-cover rounded-xl mb-3" />
+            <p class="font-semibold text-lg text-[#1e1e4b]">Ricardo</p>
+            <p class="text-sm text-gray-500">Co-Founder</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Artículos - Sección -->
+<section id="articulos" class="bg-[#e5e0ff] py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <!-- Título -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-[#1e1e4b] mb-12">Articles</h2>
+  
+      <!-- Artículo 1 -->
+      <div class="flex flex-col md:flex-row bg-white shadow-lg rounded-xl overflow-hidden mb-10">
+        <img src="../assets/images/NATURALTREASURES.webp" alt="Natural Wonders" class="w-full md:w-1/3 h-64 object-cover">
+        <div class="p-6 flex flex-col justify-between md:w-2/3">
+          <div>
+            <h3 class="text-2xl font-bold text-[#1e1e4b] mt-3 mb-2">Natural Treasures of the World</h3>
+            <p class="text-gray-700">All around the world, nature makes beautiful and amazing places. These places are not made by people. They are made by water, wind, fire, and time.</p>
+          </div>
+          <a href="../articulos/NaturalTreasures.html" class="mt-6 bg-[#7E74F1] text-white font-semibold px-6 py-2 rounded-full w-max shadow hover:bg-[#645acf] transition-all">Read More</a>
+        </div>
+      </div>
+  
+      <!-- Artículo 2 -->
+      <div class="flex flex-col md:flex-row bg-white shadow-lg rounded-xl overflow-hidden mb-10">
+        <img src="../assets/images/TheFuture.jpg" alt="Future Life" class="w-full md:w-1/3 h-64 object-cover">
+        <div class="p-6 flex flex-col justify-between md:w-2/3">
+          <div>
+            <h3 class="text-2xl font-bold text-[#1e1e4b] mt-3 mb-2">The Future is Coming: Life in 2070</h3>
+            <p class="text-gray-700">Discover how technology and cities will change by 2070. A glimpse into our possible future using 'will'.</p>
+          </div>
+          <a href="../articulos/THE FUTUREISCOMING.html" class="mt-6 bg-[#7E74F1] text-white font-semibold px-6 py-2 rounded-full w-max shadow hover:bg-[#645acf] transition-all">Read More</a>
+        </div>
+      </div>
+  
+      <!-- Artículo 3 -->
+      <div class="flex flex-col md:flex-row bg-white shadow-lg rounded-xl overflow-hidden mb-10">
+        <img src="../assets/images/NatureStrikes.webp" alt="Natural Phenomena" class="w-full md:w-1/3 h-64 object-cover">
+        <div class="p-6 flex flex-col justify-between md:w-2/3">
+          <div>
+            <h3 class="text-2xl font-bold text-[#1e1e4b] mt-3 mb-2">When Nature Strikes</h3>
+            <p class="text-gray-700">Real stories of hurricanes and earthquakes that show nature’s power and how people reacted.</p>
+          </div>
+          <a href="../articulos/NATURESTRIKES.html" class="mt-6 bg-[#7E74F1] text-white font-semibold px-6 py-2 rounded-full w-max shadow hover:bg-[#645acf] transition-all">Read More</a>
+        </div>
+      </div>
+  
+      <!-- Artículo 4 -->
+      <div class="flex flex-col md:flex-row bg-white shadow-lg rounded-xl overflow-hidden">
+        <img src="../assets/images/RETROGADGETS.jpg" alt="Retro Gadgets" class="w-full md:w-1/3 h-64 object-cover">
+        <div class="p-6 flex flex-col justify-between md:w-2/3">
+          <div>
+            <h3 class="text-2xl font-bold text-[#1e1e4b] mt-3 mb-2">Retro Gadgets</h3>
+            <p class="text-gray-700">Remember old-school tech like Walkmans, Game Boys, and Polaroid cameras? This article is all about them.</p>
+          </div>
+          <a href="../articulos/RETROGADGETS.html" class="mt-6 bg-[#7E74F1] text-white font-semibold px-6 py-2 rounded-full w-max shadow hover:bg-[#645acf] transition-all">Read More</a>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+  <!-- QUIZ: Where Should You Travel Next? -->
+<!-- QUIZ FUNCIONAL -->
+<section id="quiz" class="py-24 bg-[#f6f4fe] text-gray-800">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-primary mb-10">Where Should You Travel Next?</h2>
+    <p class="mb-10 text-lg text-gray-600">Answer the questions, count your points, and find your perfect travel destination!</p>
+
+    <div id="quiz-container" class="bg-white rounded-xl shadow-lg p-6 space-y-6">
+      <!-- Pregunta dinámica -->
+      <h3 id="question" class="text-2xl font-semibold text-[#1e1e4b]"></h3>
+      <div id="answers" class="grid gap-4"></div>
+    </div>
+
+    <!-- Resultado final -->
+    <div id="result" class="hidden mt-10 p-6 bg-white rounded-xl shadow-lg text-left text-gray-700">
+      <h3 class="text-2xl font-bold text-primary mb-4">Your Destination:</h3>
+      <p id="result-text"></p>
+    </div>
+  </div>
+</section>
+
+<script>
+  const quizData = [
+    {
+      question: "1. What weather do you like?",
+      answers: [
+        { text: "Hot and sunny", points: 3 },
+        { text: "Cold and snowy", points: 2 },
+        { text: "Fresh and cloudy", points: 1 }
+      ]
+    },
+    {
+      question: "2. What do you want to do?",
+      answers: [
+        { text: "Go to the beach", points: 3 },
+        { text: "Visit museums", points: 2 },
+        { text: "Walk in nature", points: 1 }
+      ]
+    },
+    {
+      question: "3. What do you eat when you travel?",
+      answers: [
+        { text: "Seafood or tropical food", points: 3 },
+        { text: "Soup or warm meals", points: 2 },
+        { text: "Fruit and snacks", points: 1 }
+      ]
+    },
+    {
+      question: "4. Do you like big cities?",
+      answers: [
+        { text: "Yes! I love the noise and people", points: 3 },
+        { text: "I like both cities and towns", points: 2 },
+        { text: "No, I prefer quiet places", points: 1 }
+      ]
+    },
+    {
+      question: "5. How do you take photos?",
+      answers: [
+        { text: "Selfies with people", points: 3 },
+        { text: "Landmarks and buildings", points: 2 },
+        { text: "Nature and animals", points: 1 }
+      ]
+    }
+  ];
+
+  const results = [
+    {
+      range: [5, 7],
+      text: "🏔️ Go to the Mountains – San Martín de los Andes, Argentina. You love peace, nature, and cool weather. San Martín offers beautiful forests, lakes, and mountains. Perfect for hiking, relaxing, and enjoying fresh air."
+    },
+    {
+      range: [8, 11],
+      text: "🏛️ Visit a Cultural City – Florence, Italy. You enjoy art, history, and local culture. Florence is full of museums, amazing food, and beautiful architecture. Walk through old streets and discover the magic of the Renaissance!"
+    },
+    {
+      range: [12, 15],
+      text: "🏖️ Head to the Beach – Cancún, Mexico. You love sunshine, music, and fun! Cancún has clear blue water, white beaches, and delicious tropical food. It’s perfect for relaxing or partying with friends!"
+    }
+  ];
+
+  let currentQuestion = 0;
+  let totalPoints = 0;
+
+  const questionEl = document.getElementById("question");
+  const answersEl = document.getElementById("answers");
+  const resultEl = document.getElementById("result");
+  const resultText = document.getElementById("result-text");
+
+  function loadQuestion() {
+    const data = quizData[currentQuestion];
+    questionEl.textContent = data.question;
+    answersEl.innerHTML = "";
+
+    data.answers.forEach((answer) => {
+      const btn = document.createElement("button");
+      btn.className = "w-full text-left bg-primary hover:bg-[#655dc4] text-white font-medium px-4 py-3 rounded-lg transition";
+      btn.textContent = answer.text;
+      btn.onclick = () => {
+        totalPoints += answer.points;
+        currentQuestion++;
+        if (currentQuestion < quizData.length) {
+          loadQuestion();
+        } else {
+          showResult();
+        }
+      };
+      answersEl.appendChild(btn);
+    });
+  }
+
+  function showResult() {
+    document.getElementById("quiz-container").classList.add("hidden");
+    resultEl.classList.remove("hidden");
+
+    const match = results.find(r => totalPoints >= r.range[0] && totalPoints <= r.range[1]);
+    resultText.textContent = match ? match.text : "No matching result.";
+  }
+
+  // Iniciar quiz
+  loadQuestion();
+</script>
+
+
+
+
+
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  <!-- Aquí continúa el contenido... -->
+  <script src="main.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Natural Treasures - R&R MAG</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            primary: '#7E74F1',
+            secondary: '#FFE569',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<!-- NAVBAR -->
+<nav class="bg-[#7E74F1] text-white fixed w-full z-50 shadow-md">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
+    <div class="flex items-center space-x-2">
+      <img src="/assets/images/Logo.svg" alt="Logo" class="w-6 h-6">
+      <span class="font-extrabold text-lg">R&R MAG GLOBAL</span>
+    </div>
+    <div class="hidden md:flex space-x-6">
+      <a href="../index.html#home" class="hover:bg-white hover:text-[#7E74F1] px-4 py-2 rounded-full transition font-medium">Home</a>
+      <a href="../index.html#about" class="hover:bg-white hover:text-[#7E74F1] px-4 py-2 rounded-full transition font-medium">About Us</a>
+      <a href="../index.html#articulos" class="hover:bg-white hover:text-[#7E74F1] px-4 py-2 rounded-full transition font-medium">Articles</a>
+      <a href="../index.html#quiz" class="hover:bg-white hover:text-[#7E74F1] px-4 py-2 rounded-full transition font-medium">Quiz</a>
+      <a href="../index.html#contacto" class="hover:bg-white hover:text-[#7E74F1] px-4 py-2 rounded-full transition font-medium">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ESPACIO DEL NAV -->
+<div class="h-16"></div>
+
+<!-- CONTENIDO DEL ARTÍCULO -->
+<main class="max-w-4xl mx-auto px-4 py-10 space-y-8 text-gray-800">
+  <h1 class="text-4xl md:text-5xl font-extrabold text-primary mb-4">Natural Treasures of the World</h1>
+  <p class="text-gray-500 mb-8">by Raul · Published May 2025</p>
+
+  <img src="/assets/images/nature.jpg" alt="Nature" class="w-full rounded-xl shadow-lg">
+
+  <p class="text-lg leading-relaxed">
+    All around the world, nature creates places and events that are <span class="font-semibold text-[#7E74F1]">beautiful, powerful, and full of wonder</span>. These treasures are not made by people—they are made by water, wind, fire, and time.
+  </p>
+
+  <!-- CITA DESTACADA -->
+  <blockquote class="border-l-4 border-[#7E74F1] pl-4 italic text-[#555] text-lg">
+    “They remind us how amazing and strong our planet is.”
+  </blockquote>
+
+  <!-- GALERÍA SECUNDARIA -->
+  <div class="grid md:grid-cols-3 gap-4">
+    <img src="/assets/images/canyon.jpg" alt="Canyon" class="rounded-lg">
+    <img src="/assets/images/Auroras.webp" alt="Auroras" class="rounded-lg">
+    <img src="/assets/images/falls.webp" alt="Falls" class="rounded-lg">
+  </div>
+
+  <!-- MÁS TEXTO -->
+  <h2 class="text-2xl font-bold mt-8">A World of Wonders</h2>
+  <p class="text-lg">
+    From the <span class="text-[#7E74F1] font-semibold">Grand Canyon</span> in the US to the <span class="text-[#7E74F1] font-semibold">Northern Lights</span> in Norway, and <span class="text-[#7E74F1] font-semibold">Iguazu Falls</span> in South America, every region offers breathtaking beauty. These places are not just photos—they are feelings, experiences, and stories.
+  </p>
+
+  <!-- ANUNCIO -->
+  <div class="bg-[#f9f5ff] border-l-4 border-[#7E74F1] p-4 rounded-md shadow-sm mt-10">
+    <p class="font-semibold text-[#7E74F1]">Sponsored</p>
+    <p class="text-sm text-gray-700">Plan your next adventure with <span class="font-bold">PlanetTrip</span>. Discover flights, nature tours, and eco-lodges today.</p>
+  </div>
+
+</main>
+
+<script src="../main.js"></script>
+
+</html>
+
