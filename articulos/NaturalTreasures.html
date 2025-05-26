@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Natural Treasures - R&R MAG</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script>
     tailwind.config = {
       theme: {
@@ -22,8 +24,11 @@
     }
   </script>
 </head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
 <!-- NAVBAR -->
-<nav class="bg-[#7E74F1] text-white fixed w-full z-50 shadow-md">
+<nav class="bg-[#7E74F1] text-white fixed w-full z-50 shadow-md" data-aos="fade-down">
   <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
     <div class="flex items-center space-x-2">
       <img src="/assets/images/Logo.svg" alt="Logo" class="w-6 h-6">
@@ -43,43 +48,80 @@
 <div class="h-16"></div>
 
 <!-- CONTENIDO DEL ARTÍCULO -->
-<main class="max-w-4xl mx-auto px-4 py-10 space-y-8 text-gray-800">
-  <h1 class="text-4xl md:text-5xl font-extrabold text-primary mb-4">Natural Treasures of the World</h1>
+<main class="max-w-4xl mx-auto px-4 py-10 space-y-8 text-gray-800" data-aos="fade-up">
+  <h1 class="text-4xl md:text-5xl font-extrabold text-primary mb-2">Natural Treasures of the World</h1>
   <p class="text-gray-500 mb-8">by Raul · Published May 2025</p>
 
-  <img src="/assets/images/nature.jpg" alt="Nature" class="w-full rounded-xl shadow-lg">
+  <div class="bg-[#f3e8ff] border-l-4 border-primary p-4 rounded-md shadow-sm text-sm mb-6" data-aos="fade-right">
+    <p class="text-gray-800">
+      <strong>Grammar focus:</strong> This article uses <span class="text-primary font-semibold">Simple Present</span> to describe facts, and <span class="text-primary font-semibold">Simple Past</span> to tell stories from the past.
+    </p>
+  </div>
 
-  <p class="text-lg leading-relaxed">
-    All around the world, nature creates places and events that are <span class="font-semibold text-[#7E74F1]">beautiful, powerful, and full of wonder</span>. These treasures are not made by people—they are made by water, wind, fire, and time.
+  <img src="/assets/images/nature.jpg" alt="Nature" class="w-full rounded-xl shadow-lg" data-aos="zoom-in">
+
+  <p class="text-lg leading-relaxed" data-aos="fade-up">
+    All around the world, nature <span class="text-primary font-semibold">creates</span> places and events that are <span class="font-semibold text-primary">beautiful, powerful, and full of wonder</span>. These treasures <span class="text-primary font-semibold">are not made</span> by people—they <span class="text-primary font-semibold">are made</span> by water, wind, fire, and time.
   </p>
 
-  <!-- CITA DESTACADA -->
-  <blockquote class="border-l-4 border-[#7E74F1] pl-4 italic text-[#555] text-lg">
+  <blockquote class="border-l-4 border-primary pl-4 italic text-[#555] text-lg" data-aos="fade-left">
     “They remind us how amazing and strong our planet is.”
   </blockquote>
 
-  <!-- GALERÍA SECUNDARIA -->
-  <div class="grid md:grid-cols-3 gap-4">
-    <img src="/assets/images/canyon.jpg" alt="Canyon" class="rounded-lg">
-    <img src="/assets/images/Auroras.webp" alt="Auroras" class="rounded-lg">
-    <img src="/assets/images/falls.webp" alt="Falls" class="rounded-lg">
+  <p class="text-lg leading-relaxed" data-aos="fade-right">
+    One famous place <span class="text-primary font-semibold">is</span> the Grand Canyon in the United States. It <span class="text-primary font-semibold">is</span> very big and very deep. A river <span class="text-primary font-semibold">made</span> it over millions of years. People <span class="text-primary font-semibold">see</span> red and orange rocks that <span class="text-primary font-semibold">look</span> like a painting. Many visitors <span class="text-primary font-semibold">take</span> photos and <span class="text-primary font-semibold">walk</span> on the trails.
+  </p>
+
+  <p class="text-lg leading-relaxed" data-aos="fade-left">
+    In the far north, we <span class="text-primary font-semibold">can see</span> the Northern Lights. This <span class="text-primary font-semibold">is</span> a natural light show in the sky. It <span class="text-primary font-semibold">happens</span> in places like Norway, Canada, and Iceland. The lights <span class="text-primary font-semibold">are</span> green, purple, and pink. They <span class="text-primary font-semibold">move</span> slowly across the night sky. People <span class="text-primary font-semibold">watch</span> quietly while the sky <span class="text-primary font-semibold">shines</span>. Long ago, some cultures <span class="text-primary font-semibold">thought</span> the lights <span class="text-primary font-semibold">were</span> messages from the gods.
+  </p>
+
+  <div class="grid md:grid-cols-3 gap-4" data-aos="zoom-in-up">
+    <img src="/assets/images/canyon.jpg" alt="Canyon" class="rounded-lg shadow-md hover:scale-105 transition transform duration-200 cursor-pointer">
+    <img src="/assets/images/Auroras.webp" alt="Auroras" class="rounded-lg shadow-md hover:scale-105 transition transform duration-200 cursor-pointer">
+    <img src="/assets/images/falls.webp" alt="Falls" class="rounded-lg shadow-md hover:scale-105 transition transform duration-200 cursor-pointer">
   </div>
 
-  <!-- MÁS TEXTO -->
-  <h2 class="text-2xl font-bold mt-8">A World of Wonders</h2>
-  <p class="text-lg">
-    From the <span class="text-[#7E74F1] font-semibold">Grand Canyon</span> in the US to the <span class="text-[#7E74F1] font-semibold">Northern Lights</span> in Norway, and <span class="text-[#7E74F1] font-semibold">Iguazu Falls</span> in South America, every region offers breathtaking beauty. These places are not just photos—they are feelings, experiences, and stories.
+  <p class="text-lg leading-relaxed" data-aos="fade-up">
+    In South America, we <span class="text-primary font-semibold">find</span> Iguazu Falls. These <span class="text-primary font-semibold">are</span> big waterfalls between Brazil and Argentina. The water <span class="text-primary font-semibold">falls</span> with great power. Sometimes, you <span class="text-primary font-semibold">can see</span> rainbows. People <span class="text-primary font-semibold">feel</span> the force of nature and <span class="text-primary font-semibold">hear</span> the loud sound of the water. The area <span class="text-primary font-semibold">is</span> full of green forests and animals.
+  </p>
+
+  <h2 class="text-2xl font-bold mt-8" data-aos="fade-right">A World of Wonders</h2>
+  <p class="text-lg leading-relaxed" data-aos="fade-left">
+    These <span class="text-primary font-semibold">are</span> just a few of the world’s natural wonders. From high mountains to deep canyons, from shining skies to strong waterfalls, nature <span class="text-primary font-semibold">gives</span> us beauty and inspiration. These special places <span class="text-primary font-semibold">show</span> us that Earth <span class="text-primary font-semibold">is</span> full of magic. And we must <span class="text-primary font-semibold">protect</span> it.
   </p>
 
   <!-- ANUNCIO -->
-  <div class="bg-[#f9f5ff] border-l-4 border-[#7E74F1] p-4 rounded-md shadow-sm mt-10">
+  <div class="bg-[#f9f5ff] border-l-4 border-[#7E74F1] p-4 rounded-md shadow-sm mt-10" data-aos="zoom-in">
     <p class="font-semibold text-[#7E74F1]">Sponsored</p>
     <p class="text-sm text-gray-700">Plan your next adventure with <span class="font-bold">PlanetTrip</span>. Discover flights, nature tours, and eco-lodges today.</p>
   </div>
-
 </main>
 
-<script src="../main.js"></script>
+<!-- FOOTER -->
+<footer class="bg-[#2c2d45] text-white mt-12" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-4 py-10 md:flex md:justify-between">
+    <div>
+      <h3 class="text-lg font-semibold">© 2025 R&R MAG GLOBAL</h3>
+      <p class="text-sm text-gray-400">All rights reserved.</p>
+    </div>
+    <div class="flex space-x-4 mt-4 md:mt-0">
+      <a href="#" class="hover:text-primary">Privacy Policy</a>
+      <a href="#" class="hover:text-primary">Legal Notice</a>
+      <a href="#" class="hover:text-primary">Terms</a>
+    </div>
+  </div>
+  <div class="text-center text-sm text-gray-500 pb-6">
+    Designed by <span class="text-white font-medium">R&R Creative Team</span>
+  </div>
+</footer>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
 </html>
+
 
